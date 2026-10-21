@@ -44,6 +44,7 @@ nav a:hover { color: var(--accent); }
 
 .hero { padding-block: 72px 56px; }
 .hero h1 { font-weight: 700; font-size: clamp(42px, 9vw, 92px); letter-spacing: 0.04em; line-height: 1.02; }
+.hero .label { margin-bottom: 14px; font-size: clamp(20px, 3.4vw, 32px); color: var(--accent); }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero .lede { max-width: 34em; font-size: clamp(20px, 2.6vw, 25px); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -130,8 +131,10 @@ section { padding-block: 64px; border-top: 1px solid var(--rule); }
 
 .contact { display: grid; gap: 16px; }
 .contact p { max-width: 30em; }
-.contact .links { max-width: none; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
-.contact .sep { color: var(--soft); font-size: 0.8em; }
+.hero .lede { margin-top: 28px; color: var(--muted); }
+.hero .links { margin-top: 22px; }
+.hero .links, .contact .links { max-width: none; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.hero .sep, .contact .sep { color: var(--soft); font-size: 0.8em; }
 .slot { font-family: var(--mono); font-weight: 600; font-size: 18px; border: 1px dashed var(--muted); padding: 14px 16px; color: var(--muted); }
 footer { padding-block: 32px 48px; border-top: 1px solid var(--rule); font-family: var(--mono); font-weight: 600; font-size: 15px; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { a { transition: color .15s; } }
@@ -139,7 +142,6 @@ footer { padding-block: 32px 48px; border-top: 1px solid var(--rule); font-famil
 
 <div class="wrap">
   <nav>
-    <span class="name">Chloe Nguyen</span>
     <ul>
       <li><a href="#conclave"><em>The Conclave</em></a></li>
       <li><a href="#astrology">Astrology deck</a></li>
@@ -149,7 +151,9 @@ footer { padding-block: 32px 48px; border-top: 1px solid var(--rule); font-famil
   </nav>
 
   <header class="hero">
-    <h1>PORTFOLIO</h1>
+    <p class="label">Creative portfolio</p>
+    <h1>CHLOE NGUYEN</h1>
+    <p class="lede">English graduate from San Diego State University, now working in AI content evaluation and game testing. Based in San Diego but open to projects in Los Angeles and remote work. Passionate about video games, the arts, and literature. Currently interested in entry-level work developing online community, social media, brand concept, and copywriting, and/or evaluating any and all types of creative projects.</p>
   </header>
 </div>
 
@@ -312,7 +316,6 @@ footer { padding-block: 32px 48px; border-top: 1px solid var(--rule); font-famil
   <section id="about">
     <div class="sec-head">
       <h2>Writer, editor, and artist</h2>
-      <p>English graduate from San Diego State University, now working in AI content evaluation and game testing. Based in San Diego but open to projects in Los Angeles and remote work. Passionate about the gaming industry, the arts, and literature. Currently interested in entry-level work developing online community, social media, brand concept, and copywriting, and/or evaluating any and all types of creative projects.</p>
     </div>
     <div class="about">
       <div>
